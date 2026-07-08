@@ -235,18 +235,6 @@ if st.button("Generate Clinical Report"):
     with metric1:
         st.metric("Assessment", assessment)
 
-    try:
-        probability = [[0.0002,0.9998]]
-        risk_score = probability[0][1] * 100
-
-        with metric2:
-            st.metric(
-                "Estimated CKD Risk",
-                f"{risk_score:.2f}%"
-            )
-    except:
-        pass
-
 # -----------------------------------------------------
 # FOOTER
 # -----------------------------------------------------
